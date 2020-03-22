@@ -1,0 +1,25 @@
+- React Router Link:
+    -> https://reacttraining.com/react-router/web/guides/primary-components
+
+
+- Browser Router:
+    -> CLIENT SIDE: 
+        - BrowserRouter will not append the # symbol to your URL, however will create issues when you try to link to a page or reload a page. 
+        - If the explicit route exists in your client react app, but not on your server, reloading and linking(anything that hits the server directly) will return 404 not found errors.
+
+    -> BrowserRouter, it uses HTML5 history API to render the component. The history can be modified via pushState and replaceState.
+
+
+- Hash Router:
+    -> SERVER SIDE: 
+        - HashRouter uses a hash symbol in the URL, which has the effect of all subsequent URL path content being ignored in the server request .
+        - (i.e, you send "www.mywebsite.com/#/person/john" the server gets "www.mywebsite.com". As a result the server will return the pre # URL response, and then the post # path will be handled by parsed by your client side react application)
+
+    -> HashRouter basically it uses the hash in the URL to render the component. Since I was building a static one-page website
+
+https://stackoverflow.com/questions/51974369/hashrouter-vs-browserrouter
+    https://www.kirupa.com/react/creating_single_page_app_react_using_react_router.htm
+    https://github.com/knowbody
+    https://knowbody.github.io/react-router-docs/api/Link.html
+
+- Query Parameters. Query parameters are a defined set of parameters attached to the end of a url. They are extensions of the URL that are used to help define specific content or actions based on the data being passed.
